@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return view('maker.index');
 });
+Route::post('maker/store','MakerController@store');
